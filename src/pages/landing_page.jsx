@@ -3,7 +3,7 @@ import React from 'react'
 export default function Landing_page() {
   return (
     <div className='page'>
-        <h2 className="fw-bold text-white text-center mt-2">EMINEM MEMBERSHIP CARD PERMIT</h2>
+        <h3 className="fw-bold text-white text-center mt-2">EMINEM MEMBERSHIP CARD PERMIT <i class="fa-solid fa-credit-card text-white"></i></h3>
         <form className='mt-4'>
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
