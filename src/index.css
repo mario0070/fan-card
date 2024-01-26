@@ -1,0 +1,66 @@
+:root{
+    --primary :  rgb(12, 211, 12);
+}
+
+body{
+    background-color: azure;
+}
+
+.page{
+    background-color: var(--primary);
+    width: 60%;
+    padding: 1em;
+    margin: auto auto;
+    height: fit-content;
+}
+
+.page .input-group{
+    width: 60%;
+    margin: auto auto;
+    margin-bottom: 1.2em;
+}
+
+.page .input-group input{
+    padding: .8em;
+    background-color: azure;
+}
+
+.page button{
+    padding: .7em 2em;
+    background-color: azure;
+    margin-bottom: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page i{
+    color: grey;
+}
+
+.page .input-group-text{
+    background-color: azure !important;
+}
+
+@media screen and (max-width: 858px) {
+    .page{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .page{
+        width: 95%;
+        height: 100vh;
+        position: fixed;
+        margin-left: .7em;
+        overflow: scroll;
+    }
+
+    .page .input-group{
+        width: 95%;
+        margin-bottom: 1.5em;
+    }
+
+    .page button{
+        margin-top: 2em;
+    }
+}
