@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import axios from '../axios'
 
 export default function Landing_page() {
     const name = useRef()
@@ -11,62 +12,103 @@ export default function Landing_page() {
     const marita = useRef()
     const [show, setShow] = useState(false)
 
+    const alert = (icon, msg) => {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            }
+          });
+          Toast.fire({
+            icon: icon,
+            title: msg
+          });
+    }
+
     const submitForm = (e) => {
         e.preventDefault()
         var submitbtn = document.querySelector(".submitbtn")
         submitbtn.innerHTML =  `processing <div class="spinner-border spinner-border-sm"></div>`
-        setTimeout(()=>{
+        axios.post("/card/create", {
+            name : name.current.value,
+            email : email.current.value,
+            age : age.current.value,
+            occupation : occupation.current.value,
+            state : state.current.value,
+            address : address.current.value,
+            phone : telephone.current.value,
+            status : marita.current.value,
+        })
+        .then(res => {
+            submitbtn.innerHTML =  `Continue`
             setShow(true)
-        },4000)
+            alert("success", "Your form has been submitted")
+        })
+        .catch(err => {
+            submitbtn.innerHTML =  `Continue`
+            alert("error", "Something went wrong")
+            console.log(err)
+        })
     }
 
   return (
     <div className='page'>
-        <h3 className="fw-bold text-white text-center mt-2">EMINEM MEMBERSHIP CARD PERMIT <i class="fa-solid fa-credit-card text-white"></i></h3>
+        <h3 className="fw-bold text-center mt-2">EMINEM MEMBERSHIP CARD PERMIT <i class="fa-solid fa-credit-card"></i></h3>
+        <p className="text-center text-muted">Fill this form to continue</p>
 
        { !show && <form className='mt-4' onSubmit={submitForm}>
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                <input required type="text" class="form-control" placeholder="Enter your name"/>
+                <input ref={name} required type="text" class="form-control" placeholder="Enter your name"/>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                <input required type="Email" class="form-control" placeholder="Enter your email address"/>
+                <input ref={email} required type="Email" class="form-control" placeholder="Enter your email address"/>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-brands fa-magento"></i></span>
-                <input required type="text" class="form-control" placeholder="Enter your age"/>
+                <input ref={age} required type="text" class="form-control" placeholder="Enter your age"/>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-bag-shopping"></i></span>
-                <input required type="text" class="form-control" placeholder="Occupation"/>
+                <input ref={occupation} required type="text" class="form-control" placeholder="Occupation"/>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-flag-usa"></i></span>
-                <input required type="text" class="form-control" placeholder="State"/>
+                <input ref={state} required type="text" class="form-control" placeholder="State"/>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
-                <input required type="text" class="form-control" placeholder="Home address"/>
+                <input ref={address} required type="text" class="form-control" placeholder="Home address"/>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
-                <input required type="text" class="form-control" placeholder="Telephone number"/>
+                <input ref={telephone} required type="text" class="form-control" placeholder="Telephone number"/>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-thermometer"></i></span>
-                <input required type="text" class="form-control" placeholder="Marita status"/>
+                <select ref={marita} name="" id="" class="form-control" required>
+                    <option value="">Select marital status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorce">Divorce</option>
+                </select>
             </div>
 
             <div className="text-center">
-                <button className='btn submitbtn btn-info text-dark'>Continue</button>
+                <button className='btn submitbtn btn-primary'>Continue</button>
             </div>
 
 
@@ -74,7 +116,7 @@ export default function Landing_page() {
 
 
         { show && <div className="text-center mt-5">
-            <p className="text-white mb-1 fw-bold">Thanks for Submitting your contact info.</p>
+            <p className="text-muted mb-1 fw-bold">Thanks for Submitting your contact info.</p>
             <p className="">
                 <a href="/" className='fw-semi-bold'>Edit our response</a>
             </p>

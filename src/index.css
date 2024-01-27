@@ -1,9 +1,9 @@
 :root{
-    --primary :  rgb(12, 211, 12);
+    --primary :  white;
 }
 
 body{
-    background-color: azure;
+    background-color: rgb(84, 84, 237);
 }
 
 .page h3{
@@ -22,26 +22,31 @@ body{
     width: 60%;
     margin: auto auto;
     margin-bottom: 1.2em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.084);
 }
 
 .page .input-group input{
     padding: .8em;
-    background-color: azure;
+    /* background-color: azure; */
+}
+
+.page select{
+    padding: .7em;
 }
 
 .page button{
     padding: .7em 2em;
-    background-color: azure;
+    background-color: rgb(84, 84, 237);
     margin-bottom: 1em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .page i{
-    color: grey;
+    color: rgb(84, 84, 237);
 }
 
 .page .input-group-text{
-    background-color: azure !important;
+    background-color: transparent !important;
 }
 
 @media screen and (max-width: 858px) {
@@ -68,4 +73,17 @@ body{
         margin-top: 2em;
         margin-bottom: 10em;
     }
+}
+
+.page .box{
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.16);
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 6px;
+}
+
+.page .box p {
+    color: rgb(81, 81, 81);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
