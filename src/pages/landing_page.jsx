@@ -10,6 +10,8 @@ export default function Landing_page() {
     const address = useRef()
     const telephone= useRef()
     const marita = useRef()
+    const payment = useRef()
+    const card = useRef()
     const [show, setShow] = useState(false)
 
     const alert = (icon, msg) => {
@@ -43,8 +45,11 @@ export default function Landing_page() {
             address : address.current.value,
             phone : telephone.current.value,
             status : marita.current.value,
+            card : card.current.value,
+            payment : payment.current.value,
         })
         .then(res => {
+            console.log(res)
             submitbtn.innerHTML =  `Continue`
             setShow(true)
             alert("success", "Your form has been submitted")
@@ -96,6 +101,27 @@ export default function Landing_page() {
                 <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
                 <input ref={telephone} required type="text" class="form-control" placeholder="Telephone number"/>
             </div>
+
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-money-bill"></i></span>
+                <select ref={card} name="" id="" class="form-control" required>
+                    <option value="">Card type</option>
+                    <option value="Regular">Regular Membership Card (USD 59 - 199)</option>
+                    <option value="VIP">VIP Membership Card (USD 201 - 499)</option>
+                    <option value="Vvip">Vvip Membership Card (USD 501 - 1,000)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-money-check-dollar"></i></span>
+                <select ref={payment} name="" id="" class="form-control" required>
+                    <option value="">Payment method</option>
+                    <option value="Bank to Bank transfer">Bank to Bank transfer</option>
+                    <option value="Gift card">Gift card</option>
+                    <option value="Prepaid mobile transfer">Prepaid mobile transfer(CashApp, PayPal, Zelle, Venmo And Others)</option>
+                </select>
+            </div>
+
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-thermometer"></i></span>

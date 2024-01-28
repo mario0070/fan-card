@@ -61,6 +61,14 @@ export default function Show() {
                                 <p className="mx-2 mb-0">{val.status}</p>
                             </div>
                             <div className="d-flex mb-3">
+                                <p className="fw-bold mb-0"><i class="fa-solid fa-money-check-dollar"></i> Payment Type: </p>
+                                <p className="mx-2 mb-0">{val.payment ?? "N/A"}</p>
+                            </div>
+                            <div className="d-flex mb-3">
+                                <p className="fw-bold mb-0"><i class="fa-solid fa-money-bill"></i> Card Type: </p>
+                                <p className="mx-2 mb-0">{val.card ?? "N/A"}</p>
+                            </div>
+                            <div className="d-flex mb-3">
                                 <p className="fw-bold mb-0"><i class="fa-brands fa-magento"></i> Age: </p>
                                 <p className="mx-2 mb-0">{val.age}</p>
                             </div>
