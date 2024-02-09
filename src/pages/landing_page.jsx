@@ -33,7 +33,19 @@ export default function Landing_page() {
                         <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
-                <img src="https://demo.leafcolor.com/conferencepro/wp-content/uploads/2018/01/event_ticket_wordpress_theme_7-555x472.jpg" alt="" />
+                <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/event4-750x500.jpg" alt="" />
+            </div>
+
+            <div className="box">
+                <div className="text">
+                    <div className="p-4 mt-4">
+                        <h1 className='fw-bold'>March 3, 2024</h1>
+                        <p className="mb-1">Casino Center</p>
+                        <p className="">Barcelona, Spain</p>
+                        <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
+                    </div>
+                </div>
+                <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/event6.jpg" alt="" />
             </div>
         </div>
 
@@ -43,7 +55,7 @@ export default function Landing_page() {
                 <h2 className="icon mb-3">
                     <img src="https://demo.logichunt.com/themes/emeet/wp-content/uploads/2018/09/logo-white5.png" alt="" />
                 </h2>
-                <h3 className="price fw-bold">Regular</h3>
+                <h3 className="fw-bold">Regular</h3>
                 <h1 className="price fw-bold"><sup className='text_color'>$ </sup>199</h1>
                 <p className="mb-5">Price Excluding 20% VAT</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Regular Seating</p>
@@ -58,7 +70,7 @@ export default function Landing_page() {
                 <h2 className="icon mb-3">
                     <img src="https://demo.logichunt.com/themes/emeet/wp-content/uploads/2018/09/logo-white3.png" alt="" />
                 </h2>
-                <h3 className="price fw-bold">VIP</h3>
+                <h3 className="fw-bold">VIP</h3>
                 <h1 className="price fw-bold"><sup className='text_color'>$ </sup>499</h1>
                 <p className="mb-5">Price Excluding 20% VAT</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Regular Seating</p>
@@ -73,7 +85,7 @@ export default function Landing_page() {
                 <h2 className="icon mb-3">
                     <img src="https://demo.logichunt.com/themes/emeet/wp-content/uploads/2018/09/logo-white1.png" alt="" />
                 </h2>
-                <h3 className="price fw-bold">VviP</h3>
+                <h3 className="fw-bold">VviP</h3>
                 <h1 className="price fw-bold"><sup className='text_color'>$ </sup>1,000</h1>
                 <p className="mb-5">Price Excluding 20% VAT</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Regular Seating</p>
@@ -97,7 +109,7 @@ export default function Landing_page() {
                         <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
-                <img src="https://demo.leafcolor.com/conferencepro/wp-content/uploads/2018/01/event_ticket_wordpress_theme_7-555x472.jpg" alt="" />
+                <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/gal7-750x500.jpg" alt="" />
             </div>
 
             <div className="box">
@@ -109,7 +121,7 @@ export default function Landing_page() {
                         <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
-                <img src="https://demo.leafcolor.com/conferencepro/wp-content/uploads/2018/01/event_ticket_wordpress_theme_7-555x472.jpg" alt="" />
+                <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/video1.jpg" alt="" />
             </div>
 
             <div className="box">
@@ -121,7 +133,7 @@ export default function Landing_page() {
                         <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
-                <img src="https://demo.leafcolor.com/conferencepro/wp-content/uploads/2018/01/event_ticket_wordpress_theme_7-555x472.jpg" alt="" />
+                <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/event3-750x500.jpg" alt="" />
             </div>
         </div>
 

@@ -293,10 +293,10 @@
 }
 
 .home .section1 .box .icon{
-    height: 150px;
+    height: 100px;
     background-color: black;
     border-radius: 50%;
-    width: 150px;
+    width: 100px;
     margin: auto auto;
     overflow: hidden;
 }
@@ -325,7 +325,7 @@
 }
 
 .home .section2 .box .text{
-    background-color: rgba(0, 0, 0, 0.674);
+    background-color: rgba(0, 0, 0, 0.425);
     position: absolute;
     width: 91%;
     height: 300px;
