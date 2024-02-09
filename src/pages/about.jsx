@@ -9,7 +9,7 @@ export default function About() {
             <Canvas />
             <div className="text_content">
                 <div className="d-flex justify-content-between">
-                    <h2 className="">Fan Card</h2>
+                    <h2 className="">Eminem Fan Card</h2>
                     <p className="mb-0 btn" data-bs-toggle="offcanvas" data-bs-target="#menu"><i class="fa-solid fa-list"></i></p>
                 </div>
                 <div className="desc">
