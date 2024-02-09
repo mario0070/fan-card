@@ -33,7 +33,7 @@ export default function Blog() {
                                 <h2 className="fw-bold mb-1">Blog Title</h2>
                                 <p className="date mb-4 text_color">Tues 02, 2023</p>
                                 <div className="img">
-                                    <img src="" alt="" />
+                                    <img src="https://demo.leafcolor.com/conferencepro/wp-content/uploads/2018/01/event_ticket_wordpress_theme_7-555x472.jpg" alt="" />
                                 </div>
                                 <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos laborum voluptates nostrum corrupti possimus ipsa non doloribus? Minima alias odit fugiat nostrum quae a voluptatem inventore eaque autem quod.</p>
                             </div>
