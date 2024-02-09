@@ -194,6 +194,10 @@
     margin-bottom: 2em !important;
 }
 
+.blogs .section1 .box img{
+    object-fit: cover;
+}
+
 .listing .section1 .card{
     width: 100%;
     height: 200px;
