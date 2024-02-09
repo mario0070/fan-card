@@ -157,3 +157,56 @@
     margin-right: .4em;
     color: var(--secondary);
 }
+
+.contact .section1 .box{
+    padding: 2em 1em !important;
+    width: 99%;
+    height: fit-content !important;
+}
+
+.contact .section1 .input-group{
+    margin-bottom: 1.4em;
+}
+
+.contact .section1 input{
+    padding: 1em;
+}
+
+.contact .section1 textarea{
+    resize: none;
+    width: 100%;
+    border: 1px solid rgb(225, 224, 224);
+    outline: none;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.contact .section1 .btn{
+    background-color: var(--secondary);
+    color: var(--primary);
+    margin-top: 2em;
+    padding: .7em 4em;
+}
+
+.footer{
+    background-color: var(--secondary);
+    padding: 2em;
+    width: 100%;
+    margin-top: 3em;
+    color: var(--primary);
+}
+
+.landing .section1{
+    padding: 1em;
+    margin-top: 3em;
+}
+
+.landing .section1 .box{
+    padding: 1em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.21);
+    width: 99%;
+    height: 300px;
+    margin: auto auto;
+    border-radius: 6px;
+    margin-bottom: 2em;
+}
