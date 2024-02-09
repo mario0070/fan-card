@@ -56,7 +56,7 @@ export default function Landing_page() {
                     <img src="https://demo.logichunt.com/themes/emeet/wp-content/uploads/2018/09/logo-white5.png" alt="" />
                 </h2>
                 <h3 className="fw-bold">Regular</h3>
-                <h1 className="price fw-bold"><sup className='text_color'>$ </sup>199</h1>
+                <h1 className="price fw-bold"><sup className='text_color'>$</sup>199</h1>
                 <p className="mb-5">Price Excluding 20% VAT</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Regular Seating</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Comfortable Seat</p>
@@ -71,7 +71,7 @@ export default function Landing_page() {
                     <img src="https://demo.logichunt.com/themes/emeet/wp-content/uploads/2018/09/logo-white3.png" alt="" />
                 </h2>
                 <h3 className="fw-bold">VIP</h3>
-                <h1 className="price fw-bold"><sup className='text_color'>$ </sup>499</h1>
+                <h1 className="price fw-bold"><sup className='text_color'>$</sup>499</h1>
                 <p className="mb-5">Price Excluding 20% VAT</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Regular Seating</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Comfortable Seat</p>
@@ -86,7 +86,7 @@ export default function Landing_page() {
                     <img src="https://demo.logichunt.com/themes/emeet/wp-content/uploads/2018/09/logo-white1.png" alt="" />
                 </h2>
                 <h3 className="fw-bold">VviP</h3>
-                <h1 className="price fw-bold"><sup className='text_color'>$ </sup>1,000</h1>
+                <h1 className="price fw-bold"><sup className='text_color'>$</sup>1,000</h1>
                 <p className="mb-5">Price Excluding 20% VAT</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Regular Seating</p>
                 <p className="mb-2"><i class="fa-solid fa-check text-success"></i> Comfortable Seat</p>

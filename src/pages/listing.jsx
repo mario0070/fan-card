@@ -9,19 +9,19 @@ export default function Listing() {
             {
                 "name" : "Regular",
                 "price" : "USD $199",
-                "description" : "",
+                "description" : "Unlock the world of celebrity fandom with our Regular Membership Card – your passport to exclusive access and insider perks. Dive into a realm where dreams meet reality, and immerse yourself in the excitement of celebrity culture.",
                 "color" : "first",
             },
             {
                 "name" : "VIP",
                 "price" : "USD $499",
-                "description" : "",
+                "description" : "Step into the spotlight with our VIP Membership Card – your golden ticket to the ultimate celebrity fan experience. As a VIP member, you'll enjoy unparalleled access to exclusive events, meet-and-greets with your favorite stars.",
                 "color" : "second",
             },
             {
                 "name" : "VVip",
                 "price" : "USD $1,000",
-                "description" : "",
+                "description" : "Indulge in the epitome of celebrity fandom with our VVIP Membership Card – the pinnacle of luxury and exclusivity for the true connoisseur of star-studded experiences.",
                 "color" : "third",
             },
         ])
@@ -54,7 +54,7 @@ export default function Listing() {
                                 <h4 className="date mb-4 text-success">Price: <span className="fw-bold">{val.price}</span></h4>
                                 <div className="card" id={val.color}>
                                 </div>
-                                <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos laborum voluptates nostrum corrupti possimus ipsa non doloribus? Minima alias odit fugiat nostrum quae a voluptatem inventore eaque autem quod.</p>
+                                <p className="content">{val.description}</p>
                                 <button id={val.color} className="btn bg-success"><a href="/enrollment" className='text-white'>Purchase</a></button>
                             </div>
                         )
