@@ -1,9 +1,6 @@
 :root{
     --primary :  white;
-}
-
-body{
-    background-color: rgb(84, 84, 237);
+    --secondary:   rgb(0, 0, 0);;
 }
 
 .page h3{
@@ -36,13 +33,13 @@ body{
 
 .page button{
     padding: .7em 2em;
-    background-color: rgb(84, 84, 237);
+    background-color: var(--secondary);
     margin-bottom: 1em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .page i{
-    color: rgb(84, 84, 237);
+    color: var(--secondary);
 }
 
 .page .input-group-text{
@@ -57,10 +54,9 @@ body{
 
 @media screen and (max-width: 658px) {
     .page{
-        width: 95%;
+        width: 100%;
         height: 100vh;
         position: fixed;
-        margin-left: .7em;
         overflow: scroll;
     }
 
