@@ -3,9 +3,70 @@ import Canvas from "../utils/canvas"
 import Footer from '../utils/footer'
 
 export default function Blog() {
-    const [test, setTest] = useState([])
+    const [blog, setBlog] = useState([])
     useEffect(() => {
-        setTest([1,2,3,4,5,6,7,8,9,10])
+        setBlog([
+            {
+                "title" : "Songbird Chronicles: Notes on the Melody",
+                "img" : "",
+                "content" : `Vocal Voyager: Journey through the world of vocal performance, from soaring soprano solos to gritty rock anthems, with insights from seasoned vocalists.
+                Lyric Luminary: Delve into the poetry of songwriting as we analyze the meaning behind the lyrics and uncover the stories behind the songs.
+                Chord Connoisseur: Unlock the secrets of chord progressions and harmonies with tutorials and tips for aspiring musicians and songwriters.
+                Melody Maestro: Master the art of melody with in-depth discussions on melodic development, phrasing, and composition techniques.
+                `,
+                "name" : "Henry John",
+            },
+            {
+                "title" : "Tempo Tales: Stories Behind the Sound",
+                "img" : "",
+                "content" : "Melancholy Melodies: Dive into the world of melancholic music, from haunting ballads to introspective indie tracks, with reviews and recommendations for your next moody playlist.",
+                "name" : "Dorathy Emma",
+            },
+            {
+                "title" : "Sound Spectrum: Exploring the Diversity of Music",
+                "img" : "",
+                "content" : "enre Guru: Become a genre guru with our guides to navigating the vast landscape of musical genres, from classical to country, rock to reggae, and everything in between.",
+                "name" : "Sammy Dane",
+            },
+            {
+                "title" : "Harmony Haven: Where Music Meets Meaning",
+                "img" : "",
+                "content" : "Harmonic Heroine: Celebrate the heroines of harmony as we shine a spotlight on female artists and bands whose harmonic innovations have left an indelible mark on music history.",
+                "name" : "Wilson Dave",
+            },
+            {
+                "title" : "Vinyl Vibes: Reviving Retro Tunes",
+                "img" : "",
+                "content" : "Retro Rhapsody: Relive the glory days of vinyl with our nostalgic journey through the golden age of music, featuring classic albums, forgotten gems, and vinyl collecting tips.",
+                "name" : "Noah Peter",
+            },
+            {
+                "title" : "Slim Shady Spotlight: Exploring Eminem's Impact",
+                "img" : "",
+                "content" : "Eminem Essentials: Dive into Eminem's discography with in-depth reviews and analysis of his iconic albums, from 'The Slim Shady LP' to 'Music to Be Murdered By'.",
+                "name" : "Johnson Lam",
+            },
+            {
+                "title" : "Shady Records Gazette: Keeping Up with Eminem's Label",
+                "img" : "",
+                "content" : "Shady Showdown: Explore the artists and albums signed to Shady Records, Eminem's record label, with reviews, interviews, and behind-the-scenes glimpses into the label's operations.",
+                "name" : "Lotta Maiden",
+            },
+            {
+                "title" : "Eminem Enthusiast: Your Source for Shady News",
+                "img" : "",
+                "content" : `Shady Styles: Get the scoop on Eminem's fashion, lifestyle, and interests outside of music, from his iconic stage outfits to his favorite hobbies and pastimes.
+                Eminem Extras: Explore the hidden gems of Eminem's career, from rare tracks and unreleased material to obscure collaborations and deep cuts.
+                `,
+                "name" : "Steve Miz",
+            },
+            {
+                "title" : "Eminem Empire: Building Bridges through Rhymes",
+                "img" : "",
+                "content" : "Rap Revolution: Dive into Eminem's revolutionary impact on the rap game, as we explore his boundary-pushing lyrics, innovative flow, and fearless approach to storytelling.",
+                "name" : "Mark Owen",
+            }
+        ])
     })
     return (
         <div className="landing blogs">
@@ -27,15 +88,16 @@ export default function Blog() {
             <div className="section1">
                 <h2 className="text-center fw-bold mb-4">Latest <span className="text_color">Blogs</span></h2>
                 {
-                    test.map(() => {
+                    blog.map((val) => {
                         return (
                             <div className="box">
-                                <h2 className="fw-bold mb-1">Blog Title</h2>
+                                <h2 className="fw-bold mb-2">{val.title}</h2>
+                                <p className="fw-bold mb-1">Posted by: {val.name}</p>
                                 <p className="date mb-4 text_color">Tues 02, 2023</p>
                                 <div className="img">
                                     <img src="https://demo.leafcolor.com/conferencepro/wp-content/uploads/2018/01/event_ticket_wordpress_theme_7-555x472.jpg" alt="" />
                                 </div>
-                                <p className="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos laborum voluptates nostrum corrupti possimus ipsa non doloribus? Minima alias odit fugiat nostrum quae a voluptatem inventore eaque autem quod.</p>
+                                <p className="content">{val.content}</p>
                             </div>
                         )
                     })
