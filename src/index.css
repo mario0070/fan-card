@@ -133,7 +133,7 @@
 .top .offcanvas-header{
     background-color: var(--secondary);
     color: var(--primary);
-    padding-bottom: 3em;
+    padding-bottom: 2em;
     padding-top: 2em;
 }
 
