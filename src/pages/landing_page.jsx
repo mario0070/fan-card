@@ -30,7 +30,7 @@ export default function Landing_page() {
                         <h1 className='fw-bold'>March 3, 2024</h1>
                         <p className="mb-1">Casino Center</p>
                         <p className="">Barcelona, Spain</p>
-                        <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
+                        <button className="btn"><a href="/enrollment">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
                 <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/event4-750x500.jpg" alt="" />
@@ -42,7 +42,7 @@ export default function Landing_page() {
                         <h1 className='fw-bold'>March 3, 2024</h1>
                         <p className="mb-1">Casino Center</p>
                         <p className="">Barcelona, Spain</p>
-                        <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
+                        <button className="btn"><a href="/enrollment">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
                 <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/event6.jpg" alt="" />
@@ -106,7 +106,7 @@ export default function Landing_page() {
                         <h1 className='fw-bold'>March 3, 2024</h1>
                         <p className="mb-1">Casino Center</p>
                         <p className="">Barcelona, Spain</p>
-                        <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
+                        <button className="btn"><a href="/enrollment">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
                 <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/gal7-750x500.jpg" alt="" />
@@ -118,7 +118,7 @@ export default function Landing_page() {
                         <h1 className='fw-bold'>March 3, 2024</h1>
                         <p className="mb-1">Casino Center</p>
                         <p className="">Barcelona, Spain</p>
-                        <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
+                        <button className="btn"><a href="/enrollment">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
                 <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/video1.jpg" alt="" />
@@ -130,7 +130,7 @@ export default function Landing_page() {
                         <h1 className='fw-bold'>March 3, 2024</h1>
                         <p className="mb-1">Casino Center</p>
                         <p className="">Barcelona, Spain</p>
-                        <button className="btn"><a href="">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
+                        <button className="btn"><a href="/enrollment">Purchase Card <i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
                 <img src="https://www.cssigniter.com/vip/solo/wp-content/uploads/sites/2/2014/09/event3-750x500.jpg" alt="" />
