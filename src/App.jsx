@@ -6,6 +6,7 @@ import About from './pages/about'
 import Blog from './pages/blog'
 import Contact from './pages/contact'
 import Listing from './pages/listing'
+import Promo from './pages/promo'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
        <Routes>
           <Route element={<LandingPage/>} path='/'/>
+          <Route element={<Promo/>} path='/promo'/>
           <Route element={<About/>} path='/about-us'/>
           <Route element={<Contact/>} path='/contact-us'/>
           <Route element={<Listing/>} path='/card-collections'/>
