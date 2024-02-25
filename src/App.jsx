@@ -7,6 +7,7 @@ import Blog from './pages/blog'
 import Contact from './pages/contact'
 import Listing from './pages/listing'
 import Promo from './pages/promo'
+import Login from './pages/login'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route element={<Blog/>} path='/blogs'/>
           <Route element={<Form/>} path='/enrollment'/>
           <Route element={<Show/>} path='/my-dashboard'/>
+          <Route element={<Login/>} path='/account-login'/>
         </Routes>
     </>
   )
